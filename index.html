@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Globester Mobile Application </title>
+<link rel="stylesheet" type="text/css" href="/senchaCss/sencha-touch.css" />   
+<script type="text/javascript" src="/sencha-touch.js"></script>
+<script type="text/javascript" src="/senchaSrc/index.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<style type="text/css" media="screen">
+        .day {
+            background-color: #ffffff;
+            color: rgba(0,0,0,.5);
+            margin:-1px 0px;
+            width: 100%;
+            -webkit-border-radius:5px;
+            border: 1px solid #dcd9d9;
+            padding:5px;
+			text-align:left;
+			color:#000000;
+			cursor:pointer;
+        }
+        
+        .x-phone .day {
+            float: none;
+            width: 98%;
+            padding:0px;
+        }
+        
+        .day img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .temp {
+            display: block;
+            margin: 20px 0;
+            font-size: 48px;
+            line-height: 40px;
+        }
+        
+        .day .temp_low {
+            display: inline;
+        }
+        
+        .temp_low {
+            display: block;
+            font-size: 26px;
+            color: rgba(30,30,30,.5);
+        }
+        
+        .date {
+            margin:5px 0px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+		
+		 .demo-weather {
+          display: block;
+          width:100%;
+		  min-height:auto;
+		  max-height:185px;
+          
+        }
+        .demos-loading {
+          background: rgba(0,0,0,.3) url(../resources/shared/loading.gif) center center no-repeat;
+          display: block;
+          width: 10em;
+          height: 10em;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -5em;
+          margin-top: -5em;  
+          -webkit-border-radius: .5em;
+          color: #fff;
+          text-shadow: #000 0 1px 1px;
+          text-align: center;
+          padding-top: 8em;
+          font-weight: bold;
+        }
+    </style>
+</head> 
+<body>	
+
+<script type="text/javascript">
+function show_rtfrom(cityname)
+{
+	Ext.getCmp('rtfrom').setValue(cityname);
+	Ext.getCmp('rtfrom1').hide();
+}
+function show_rtto(cityname)
+{
+	Ext.getCmp('rtto').setValue(cityname);
+	Ext.getCmp('rtto1').hide();
+}
+</script>
+<div id="mydiv"></div>	
+<div id="pre_loading" style="display: none; padding:0px 0px 0px 80px"><img align="absmiddle" src="/images/preloader.gif"></div>		
+</body>
+</html>
